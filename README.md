@@ -70,6 +70,10 @@ Also add the security credentials in and export them in bash
  The  `terraform apply` command executes the actions proposed in a Terraform plan.
  An apply should prompt us a yes or no . To automate this and automatically say yes run : `terraform apply --auto-approve`
 
+ ### Terraform destroy
+
+ Will destroy resources after running the command `terraform destroy`
+
  ### Terraform state file
 
  `.terraform.tfstate` contains infomation about the current state of your infrastrcuture
