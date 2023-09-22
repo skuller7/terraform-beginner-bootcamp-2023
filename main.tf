@@ -11,6 +11,16 @@ terraform {
   }
 }
 
+terraform {
+  cloud {
+    organization = "skuller"
+
+    workspaces {
+      name = "terra-house-v1"
+    }
+  }
+}
+
 
 provider "aws" {
   # Configuration options

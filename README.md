@@ -77,3 +77,44 @@ Also add the security credentials in and export them in bash
  ### Terraform state file
 
  `.terraform.tfstate` contains infomation about the current state of your infrastrcuture
+
+
+ ## Issues with Terraform cloud login and Gitpod
+
+ When trying to run ` terraform login ` in our terminal we get a weird output to generate a token, 
+ and so we have to do this process manually 
+
+ First generate the token from you terraform cloud account 
+ ```
+ https://app.terraform.io/app/settings/tokens?source=terraform-login
+ ```
+
+ Then create the file & open in console by running 
+ 
+ ```sh
+   touch  /home/gitpod/.terraform.d/credentials.tfrc.json
+   open  /home/gitpod/.terraform.d/credentials.tfrc.json
+ ```
+
+After that print this json code in your file 
+
+```tf
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR-TOKEN"
+    }
+  }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
