@@ -96,7 +96,7 @@ Also add the security credentials in and export them in bash
    open  /home/gitpod/.terraform.d/credentials.tfrc.json
  ```
 
-After that print this json code in your file 
+After that print this json code in your file & replace the YOUR-TOKEN with your actual token 
 
 ```tf
 {
@@ -107,6 +107,8 @@ After that print this json code in your file
   }
 }
 ```
+
+We have automated this workaround with the following bash script [/nbt/generate_tfrc_creds](/nbt/generate_tfrc_creds)
 
 
 
